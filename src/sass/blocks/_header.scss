@@ -1,0 +1,39 @@
+
+//header выносим в отдельный блок , потму что он может повторяться на дргуих сайтах
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        width: 250px;
+        img{
+            width: 100%;
+        }
+    }
+    &__offisial{
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        span{
+            font-size: 18px;
+            display: block;
+        }
+    }
+    &__phone{
+        display: block;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 700;
+        &:hover{
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+   
+}

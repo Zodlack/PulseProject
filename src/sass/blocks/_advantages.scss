@@ -1,0 +1,55 @@
+.advantages{
+    padding: 68px 0 102px 0;
+    min-height: 473px;
+    background-color: #f6f6f6;
+    &__title{
+        display: block;
+        margin: 0  auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: #0d0d0d;
+        font-size: 30px;
+        font-weight: 700;
+        
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 76px;
+    }
+    &__block{
+        width: 240px;
+        text-align: center;
+    }
+    &__subtitle{
+        margin-top: 48px;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__descr{
+        margin-top: 31px;
+        font-size: 14px;
+        font-weight: 300;
+        a{
+            color: #ff0000;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        
+    }
+    &__icon{
+        &_animated{
+            img{
+                animation: heartbeat 1.5s ease infinite; // можно записать одной строчкой (множественная анимация.Обязательно соблюдать порядок написания , иначе не будет работать )
+                // animation-name: heartbeat;
+                // animation-duration: 1.5s;
+                // animation-timing-function: ease;
+                // animation-iteration-count: infinite;
+                &:hover{
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+}
